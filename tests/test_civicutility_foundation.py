@@ -6,7 +6,7 @@ from civicutility.service_requests import prepare_service_request
 
 
 def test_version_is_release_version():
-    assert __version__ == "0.1.0"
+    assert __version__ == "0.1.1"
 
 
 def test_policy_answer_is_cited_and_boundary_limited():

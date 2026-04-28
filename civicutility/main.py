@@ -1,7 +1,7 @@
 """FastAPI runtime foundation for CivicUtility."""
 
 from civiccore import __version__ as CIVICCORE_VERSION
-from fastapi import FastAPI
+from fastapi import FastAPI, Response
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
@@ -17,6 +17,12 @@ app = FastAPI(
     version=__version__,
     description="Utility customer-service copilot foundation for CivicSuite.",
 )
+
+@app.get("/favicon.ico", include_in_schema=False)
+def favicon() -> Response:
+    """Return an empty favicon response so browser QA has a clean console."""
+
+    return Response(status_code=204)
 
 POLICY_SOURCES = [
     UtilityPolicySource(
@@ -64,7 +70,7 @@ def root() -> dict[str, str]:
             "payments, shutoff/reconnect decisions, live billing connectors, live LLM calls, "
             "and Civic311 write-back are not implemented yet."
         ),
-        "next_step": "Post-v0.1.0 roadmap: billing-system read adapters and Civic311 handoff integration",
+        "next_step": "Post-v0.1.1 roadmap: billing-system read adapters and Civic311 handoff integration",
     }
 
 

@@ -15,7 +15,7 @@ python -m pip install -e ".[dev]"
 python -m uvicorn civicutility.main:app --host 127.0.0.1 --port 8142
 ```
 
-Runtime dependency: `civiccore==0.2.0`.
+Runtime dependency: `civiccore==0.3.0`.
 
 Primary endpoints:
 
@@ -30,4 +30,4 @@ Primary endpoints:
 
 ![CivicUtility architecture](docs/architecture-civicutility.svg)
 
-CivicUtility is a module on top of CivicCore. v0.1.0 is deterministic and local: no live billing connector, live LLM call, account write, payment processing, or Civic311 write-back is shipped.
+CivicUtility is a module on top of CivicCore. v0.1.1 is deterministic and local: no live billing connector, live LLM call, account write, payment processing, or Civic311 write-back is shipped.
