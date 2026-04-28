@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+  <title id="title">CivicUtility architecture</title>
+  <desc id="desc">CivicUtility sits above CivicCore and provides safe customer-service copilot APIs without writing to utility billing or payment systems.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e4fff6"/>
+      <stop offset="1" stop-color="#fff4dc"/>
+    </linearGradient>
+    <style>
+      .box{fill:#fffaf1;stroke:#8fc7b7;stroke-width:3;rx:24}
+      .hard{fill:#fff1f0;stroke:#d98282;stroke-width:3;rx:24}
+      .text{font-family:Aptos,Segoe UI,sans-serif;fill:#16211e}
+      .title{font-size:28px;font-weight:800}
+      .body{font-size:18px}
+      .arrow{stroke:#0f766e;stroke-width:4;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0f766e"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="520" fill="url(#bg)"/>
+  <text x="55" y="62" class="text title">CivicUtility v0.1.0</text>
+  <text x="55" y="94" class="text body">Utility customer-service copilot foundation</text>
+  <rect x="55" y="140" width="240" height="120" class="box"/>
+  <text x="83" y="180" class="text title">Staff / Resident</text>
+  <text x="83" y="212" class="text body">Policy questions</text>
+  <text x="83" y="238" class="text body">Service intake</text>
+  <rect x="400" y="105" width="310" height="210" class="box"/>
+  <text x="430" y="150" class="text title">CivicUtility API</text>
+  <text x="430" y="185" class="text body">Cited policy Q&amp;A</text>
+  <text x="430" y="212" class="text body">Read-only account context</text>
+  <text x="430" y="239" class="text body">Arrangement drafts</text>
+  <text x="430" y="266" class="text body">Service-request handoff</text>
+  <rect x="805" y="110" width="240" height="95" class="box"/>
+  <text x="835" y="150" class="text title">CivicCore</text>
+  <text x="835" y="178" class="text body">Shared foundation</text>
+  <rect x="805" y="250" width="240" height="140" class="hard"/>
+  <text x="835" y="292" class="text title">External Systems</text>
+  <text x="835" y="324" class="text body">Read future only</text>
+  <text x="835" y="350" class="text body">No writes/payments</text>
+  <line x1="295" y1="200" x2="390" y2="200" class="arrow"/>
+  <line x1="710" y1="165" x2="795" y2="157" class="arrow"/>
+  <line x1="710" y1="252" x2="795" y2="306" class="arrow" stroke-dasharray="10 8"/>
+  <rect x="55" y="340" width="655" height="110" class="hard"/>
+  <text x="85" y="382" class="text title">Hard v0.1.0 Boundaries</text>
+  <text x="85" y="414" class="text body">No payment processing, shutoff/reconnect decisions, account writes, live LLM calls, or billing-system replacement.</text>
+</svg>
