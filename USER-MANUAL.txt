@@ -1,7 +1,7 @@
 CivicUtility User Manual
 
-For staff: use CivicUtility to draft cited utility policy answers, view CSR-safe read-only account context, draft payment arrangement language for review, and prepare service-request handoffs. Staff approve all resident-facing guidance.
+For staff: use CivicUtility to draft cited utility policy answers, view CSR-safe read-only account context, draft payment arrangement language for review, prepare service-request handoffs, and optionally save account/service workpapers for later review. Staff approve all resident-facing guidance.
 
 Boundaries: CivicUtility does not process payments, approve arrangements, modify accounts, issue shutoff or reconnect decisions, dispatch crews, or replace utility billing systems.
 
-For IT: install with python -m pip install -e ".[dev]" and run with python -m uvicorn civicutility.main:app --host 127.0.0.1 --port 8142. Depends on civiccore==0.3.0.
+For IT: install with python -m pip install -e ".[dev]" and run with python -m uvicorn civicutility.main:app --host 127.0.0.1 --port 8142. Depends on civiccore==0.3.0. Optional persistence is controlled by CIVICUTILITY_WORKPAPER_DB_URL and is only for CSR-safe account snapshots and service-request intake drafts.
